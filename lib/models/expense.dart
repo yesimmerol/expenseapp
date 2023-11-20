@@ -7,7 +7,7 @@ const uuid = Uuid();
 
 enum Category { food, education, travel, work }
 
-const CategoryIcons = {
+const categoryIcons = {
   Category.food: Icons.food_bank_sharp,
   Category.education: Icons.cast_for_education,
   Category.work: Icons.car_rental,
@@ -31,4 +31,17 @@ class Expense {
     var formatter = DateFormat.yMd();
     return formatter.format(date);
   }
-}
+} // dummy data
+
+final List<Expense> expenses = [
+  Expense(
+      name: "Yiyecek",
+      price: 200.59,
+      date: DateTime.now(),
+      category: Category.food),
+  Expense(
+      name: "Flutter Udemy Course",
+      price: 200.99,
+      date: DateTime.now(),
+      category: Category.education),
+]; // firebase,veritabanı

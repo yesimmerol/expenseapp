@@ -17,7 +17,7 @@ class ExpenseItem extends StatelessWidget {
               children: [
                 Text("${expense.price.toStringAsFixed(2)} ₺"),
                 const Spacer(),
-                Icon(CategoryIcons[expense.category]),
+                Icon(categoryIcons[expense.category]),
                 const SizedBox(width: 8),
                 Text(expense.formattedDate)
               ],

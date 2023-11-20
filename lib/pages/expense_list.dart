@@ -10,20 +10,6 @@ class ExpenseList extends StatefulWidget {
 }
 
 class _ExpenseListState extends State<ExpenseList> {
-  // dummy data
-  final List<Expense> expenses = [
-    Expense(
-        name: "Yiyecek",
-        price: 200.59,
-        date: DateTime.now(),
-        category: Category.food),
-    Expense(
-        name: "Flutter Udemy Course",
-        price: 200.99,
-        date: DateTime.now(),
-        category: Category.education),
-  ]; // firebase,veritabanı
-
   @override
   Widget build(BuildContext context) {
     return Center(
